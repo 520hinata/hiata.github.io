@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户信息</title>
+</head>
+<style>
+    .container {
+        width: 510px;
+        height: 150px;
+        margin: 50px auto;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .container>* {
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+    .userImg {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 15px 5px 5px 5px;
+        border-radius: 10%;
+
+    }
+
+    .userInfo {
+        margin-top: 15px;
+        display: inline-block;
+        width: 175px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .action {
+        width: 100px;
+        height: 160px;
+        text-align: center;
+    }
+</style>
+<link rel="stylesheet" href="E:\Html\图书商城\bootstrap-3.4.1-dist\css\bootstrap.min.css">
+
+<body>
+    <div class="row">
+        <div class="col-md-4"></div>
+    <div class="container col-md-4 " >
+        <img src="E:\Html\图书商城\IMG_1067.JPG" alt="" class="userImg">
+        <div class="userInfo">
+            <p style="font-weight:bolder;font-size: 24px;font-family: 新宋体;">MANSON</p>
+            <p>性别：女</p>
+            <p>账号余额：99</p>
+        </div>
+        <div class="action">
+            <div style="margin-top: 20px;">
+                <a href="#" class="btn" data-toggle="modal" data-target="#myModal">修改密码</a>
+
+            </div>
+            <br>
+            <a href="#" style="margin-top: 20px;">充值金额</a>
+        </div>
+        <div>
+            <img src="E:\Html\图书商城\IMG_E2426.JPG" alt="" style="width: 100px;height: 130px;margin-top: 10px;margin-left: 35px;">
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">修改密码</h4>
+                </div>
+                <div class="modal-body">
+                    <label for="">旧密码：</label>
+                     <input type="text">
+                    <br>
+                    <label for="">新密码：</label>
+                     <input type="text">
+                    <br>
+                    <label for="">再次输入新密码：</label>
+                     <input type="text">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消修改</button>
+                    <button type="button" class="btn btn-primary">确认修改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="E:\Html\图书商城\JQ\jquery-3.7.1.min.js"></script>
+<script src="E:\Html\图书商城\bootstrap-3.4.1-dist\js\bootstrap.min.js"></script>
+
+</html>

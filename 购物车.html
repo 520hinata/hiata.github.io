@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 550px;
+        max-height: 800px;
+        min-height: 800px;
+        overflow: hidden;
+        border-radius: 8px;
+        margin: 20px auto;
+        border: 1px solid black;
+        position: relative;
+    }
+
+    .bottom {
+        width: 100%;
+        height: 80px;
+        position:absolute;
+        background-color: #40c6de;
+        bottom: 0px;
+        display: flex;
+        justify-content: space-around
+    }
+
+    .bottom button {
+        margin-top: 12px;
+        width: 150px;
+        background-color: #FF6900;
+        color: white;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .shop {
+
+        width: 90%;
+        height: 100px;
+        margin: 5px auto;
+        border-bottom: 1px solid rgb(112, 111, 111);
+
+    }
+
+    .shop>div {
+        display: inline-block;
+        vertical-align: top;
+        /* Align elements to the top */
+    }
+
+    .shop img {
+        width: 80px;
+        height: 90px;
+        background-color: antiquewhite;
+    }
+
+    .add >p {
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+    .num {
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        margin-top: 20px;
+        background-color: rgb(173, 5, 84);
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+    }
+
+    .buy {
+        background-color: #CB3D39;
+        color: white;
+        border-radius: 8px;
+        width: 80px;
+        height: 35px;
+        text-align: center;
+    }
+    .buy1{
+        background-color: #CB3D39;
+        color: white;
+        border-radius: 8px;
+        width: 90px;
+        height: 35px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="shop">
+            <div>
+                <img src="" alt="">
+
+            </div>
+            <div style="background-color: aliceblue; width: 170px;height: 90px;">
+                <p>书本名字</p>
+                <p>单本价格</p>
+            </div>
+            <div id="right" style="background-color: bisque;width: 230px;height: 90px;text-align: center;">
+                <div class="add">
+                    <p class="num">-</p>
+                    <p style="color:red ;">10</p>
+                    <p class=" num">+</p>
+                    <p style="margin-left: 5px;">总计：<span style="color: red;">22</span></p>                    
+                </div>
+               <div >
+                <button class="buy">购买按钮</button>
+                <button class="buy1">移出购物车</button>
+               </div>
+                
+            </div>
+        </div>
+        <div class="bottom">
+            <button>清空购物车</button>
+            <button>一键购买</button>
+        </div>
+    </div>
+</body>
+
+</html>
